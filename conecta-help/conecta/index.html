@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <title>CONECTA</title>
+</head>
+
+<body>
+    <header>
+        <a href="../img/conecta001.png"><img src="../img/conecta001.png" alt="logo conect help"></a>
+    </header>
+    <div id="navbar">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../conecta/index.html">CONECTA</a></li>
+            <li><a href="../autora/index.html">AUTORA</a></li>
+        </ul>
+    </div>
+    <h1> Só Vamos! </h1>
+    <p> Olá, GIVER! Logo abaixo é possível você estar preenchendo
+        nosso formulário para o cadastro de sua doação. </p>
+    <p> Olá, Receiver! você também poderá estar se cadastrando informando
+        qual equipamento está precisando no momento.
+        ATENÇÃO: lembramos que há um limite de 2 recebimentos por CPF a cada ano.
+    </p>
+    <fieldset>
+        <form action="/data-form" method="post" name="data" onSubmit="return enviardados();">
+            <div class="field">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" style="width: 12em" value="">
+            </div>
+            <div class="field">
+                <label for="snome">Sobrenome</label>
+                <input type="text" id="snome" name="snome" style="width: 12em" value="">
+            </div>
+            <div class="field">
+                <label>GIVER</label>
+                <label>
+                    <input type="radio" name="giver" value="pessoaf"> Pessoa Física
+                </label>
+                <label>
+                    <input type="radio" name="giver" value="insti"> Instituição/CNPJ
+                </label>
+            </div>
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" style="width: 15em" value="">
+            </div>
+            <div class="field">
+                <label for="phone">Telefone</label>
+                <input type="text" id="phone" name="phone" style="width: 12em" value="">
+            </div>
+            <div class="field">
+                <label for="city">Cidade</label>
+                <input type="text" id="city" name="city" style="width: 10em" value="">
+            </div>
+            <div class="field">
+                <label for="state">Estado</label>
+                <select name="state" id="state">
+                    <option value="">--</option>
+                    <option value="PR">AC</option>
+                    <option value="PR">AL</option>
+                    <option value="PR">AP</option>
+                    <option value="PR">AM</option>
+                    <option value="PR">BA</option>
+                    <option value="PR">CE</option>
+                    <option value="PR">DF</option>
+                    <option value="PR">ES</option>
+                    <option value="PR">GO</option>
+                    <option value="PR">MA</option>
+                    <option value="PR">MT</option>
+                    <option value="PR">MS</option>
+                    <option value="PR">MG</option>
+                    <option value="PR">PA</option>
+                    <option value="PR">PB</option>
+                    <option value="PR">PE</option>
+                    <option value="PR">PI</option>
+                    <option value="PR">RJ</option>
+                    <option value="PR">RN</option>
+                    <option value="PR">RS</option>
+                    <option value="PR">RO</option>
+                    <option value="PR">RR</option>
+                    <option value="PR">SC</option>
+                    <option value="PR">SP</option>
+                    <option value="PR">SE</option>
+                    <option value="PR">TO</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="message">Mensagem</label>
+                <textarea rows="6" style="width: 20em" id="message" name="message"></textarea>
+            </div>
+            <input name="Submit" type="submit" class="formobjects" value="Enviar">
+    </fieldset>
+    </form>
+    <script type="text/javascript" src="../conecta/js/main.js"></script>
+
+
+</body>
+
+</html>
